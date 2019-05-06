@@ -1,0 +1,87 @@
+
+body {
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	font-size: 18pt;
+	font-family: Tahoma;
+	vertical-align: middle;
+}
+
+#ico {
+	display: none;
+	margin: 0 auto;
+}
+
+
+#temperature {
+	display: none;
+	font-size: 26pt;
+}
+
+#cityName {
+	display: none;
+	font-size: 20pt;
+}
+
+#next {
+	display: none;
+	font-size: 16pt;
+}
+
+#t1 {
+	display: none;
+	font-size: 16pt;
+	
+	float:right;
+	 margin-right: 50px;
+}
+
+#t2 {
+	display: none;
+	font-size: 16pt;
+	float:right;
+	
+	 margin-right: 50px;
+}
+
+#t3 {
+	display: none;
+	font-size: 16pt;
+	float:right;
+	margin-right: 50px;
+}
+
+#ico1 {
+	display: none;
+	float: left;
+	margin-left: 80px;
+
+	 height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
+
+#ico2 {
+	display: none;
+	float: left;
+	margin-left: 80px;
+	
+	 height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
+
+
+#ico3 {
+	display: none;
+	margin-left: 80px;
+	
+	margin: auto;
+	 height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
