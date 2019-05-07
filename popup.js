@@ -38,6 +38,7 @@ function showResult(response) {
 	var t3 = document.getElementById("t3");
 	var ico3 = document.getElementById("ico3");
 	var next = document.getElementById("next");
+	var hum=document.getElementById("hum");
 
 	next.style.display="block";
 	next.message="Next 3 Days";
@@ -47,20 +48,19 @@ function showResult(response) {
 	temperatureDiv.style.display = "block";
 	temperatureDiv.textContent = response.currently.temperature.toString().split('.')[0] + "˚C";
 
+	hum.style.display="block";
+	hum.textContent="with "+response.currently.humidity*100+"% of humidity";
+
 	t1.style.display = "block";
 	t1.textContent = response.daily.data[1].apparentTemperatureMax.toString()+ "˚C";
-
 	ico1.style.display = "block";
 	ico1.src = chrome.extension.getURL("/" + response.daily.data[1].icon + ".png");
-
 	t2.style.display = "block";
 	t2.textContent = response.daily.data[2].apparentTemperatureMax.toString()+ "˚C";
-ico2.style.display = "block";
+	ico2.style.display = "block";
 	ico2.src = chrome.extension.getURL("/" + response.daily.data[2].icon + ".png");
-	
 	t3.style.display = "block";
 	t3.textContent = response.daily.data[3].apparentTemperatureMax.toString()+ "˚C";
-
 	ico3.style.display = "block";
 	ico3.src = chrome.extension.getURL("/" + response.daily.data[3].icon + ".png");
 

@@ -2,7 +2,7 @@
 body {
 	text-align: center;
 	width: 300px;
-	height: 300px;
+	height: 350px;
 	font-size: 18pt;
 	font-family: Tahoma;
 	vertical-align: middle;
@@ -17,11 +17,20 @@ body {
 #temperature {
 	display: none;
 	font-size: 26pt;
+	
+	
 }
 
+#hum {
+	display: none;
+	font-size:20pt;
+
+
+}
 #cityName {
 	display: none;
 	font-size: 20pt;
+	width:100%;
 }
 
 #next {
